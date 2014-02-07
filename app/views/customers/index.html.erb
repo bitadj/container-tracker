@@ -1,0 +1,14 @@
+<h1>Customers</h1>
+<table id="customer-table">
+	<thead>
+		<tr>
+			<th>Customer ID</th>
+			<th>Name</th>
+		</tr>
+	</thead>
+	<tbody>
+		<%= render @customers %>
+	</tbody>
+</table>
+
+<%= link_to "Add new customer", new_customer_path %>
