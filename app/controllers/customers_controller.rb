@@ -15,6 +15,17 @@ class CustomersController < ApplicationController
 	@customer = Customer.find(params[:id])
   end
 
+  def create
+  	@customer = Customer.new(customer_params)
+
+  	if @customer.save
+  		flash[:notice] = "Successfully created art car!"
+  		redirect_to action: 'index'
+  	else
+  		render action: 'new'
+  	end
+  end
+
   def update
 	@customer = Customer.find(params[:id])
 
@@ -32,6 +43,18 @@ class CustomersController < ApplicationController
   	cust.destroy
 		redirect_to customers_path
   end
+
+
+  	# WHY DOES THIS METHOD STILL CREATE A BLANK CUSTOMER IN DB??
+ #  before_filter :check_for_cancel, only: [:create, :update]
+
+ #  def check_for_cancel
+	# if params[:commit] == "Cancel"
+	# 	redirect_to customers_path
+	# end
+ #  end
+
+
 
   private
 

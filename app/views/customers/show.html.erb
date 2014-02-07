@@ -1,7 +1,12 @@
-
+<h1>
+	<%= @customer.name %>
+</h1>
 
 <dt>Customer ID</dt>
 <dd><%= @customer.customer_id %></dd>
 
 <dt>Customer Name</dt>
 <dd><%= @customer.name %></dd>
+
+<br />
+<%= link_to 'Back to all customers', customers_path %>
