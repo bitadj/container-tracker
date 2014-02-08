@@ -19,7 +19,7 @@ class CustomersController < ApplicationController
   	@customer = Customer.new(customer_params)
 
   	if @customer.save
-  		flash[:notice] = "Successfully created art car!"
+  		flash[:notice] = "Successfully created customer!"
   		redirect_to action: 'index'
   	else
   		render action: 'new'
@@ -30,18 +30,18 @@ class CustomersController < ApplicationController
 	@customer = Customer.find(params[:id])
 
 	if @customer.update customer_params
-    	flash[:notice] = "Successfully updated art car!"
-    	redirect_to custtion: 'index'
+    	flash[:notice] = "Successfully updated customer!"
+    	redirect_to action: 'index'
 	else
 		render action: 'edit'
     end
   	
   end
 
-    def destroy
+  def destroy
   	cust = Customer.find(params[:id])
   	cust.destroy
-		redirect_to customers_path
+	redirect_to customers_path
   end
 
 

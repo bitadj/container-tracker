@@ -1,5 +1,7 @@
 class Customer
   include Mongoid::Document
-  field :customer_id, type: Integer
+  field :cust_num, type: String
   field :name, type: String
+
+  has_many :orders
 end
