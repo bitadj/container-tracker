@@ -1,8 +1,8 @@
 <tr>	
 	<td><%= order.customer.name %></td>
 	<td><%= link_to order.po_num, order %></td>
-	<td><%= order.start_date %></td>
-	<td><%= order.cancel_date %></td>
+	<td><%= order.start_date.strftime '%m/%d/%y' %></td>
+	<td><%= order.cancel_date.strftime '%m/%d/%y' %></td>
 	<td><%= order.num_cartons %></td>
 
 	<td><%= link_to "Edit", edit_order_path(order)%></td>

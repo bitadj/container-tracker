@@ -1,0 +1,32 @@
+<%= form_for @order do |f| %>
+	<div>
+		PO Number<br />
+		<%= f.text_field :po_num %>
+	</div>
+
+	<br />
+
+	<div>
+		Start Date<br />
+		<%= f.text_field :start_date %>
+	</div>
+
+	<br />
+
+	<div>
+		Cancel Date<br />
+		<%= f.text_field :cancel_date %>
+	</div>
+
+	<br />
+
+	<div>
+		Number of Cartons<br />
+		<%= f.text_field :num_cartons %>
+	</div>	
+
+	<br />	
+	<div><%= f.submit %> <%= button_tag "Reset", type: :reset %></div>
+	
+	<%= link_to "Cancel and go back", orders_path %>
+<% end %>

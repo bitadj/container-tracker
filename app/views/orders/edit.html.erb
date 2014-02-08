@@ -1,2 +1,8 @@
-<h1>Orders#edit</h1>
-<p>Find me in app/views/orders/edit.html.erb</p>
+<h1>Edit Order 
+	<br /> 
+	<%= @order.customer.name %>
+	<br />
+	<%= @order.po_num %>
+</h1>
+
+<%= render partial: 'form' %>
