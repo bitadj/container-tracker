@@ -1,4 +1,8 @@
 ContainerTracker::Application.routes.draw do
+  get "orders/index"
+  get "orders/new"
+  get "orders/edit"
+  get "orders/show"
   resources :customers, only: [:index, :show, :create, :new, :edit, :update, :destroy]
 
   # The priority is based upon order of creation: first created -> highest priority.

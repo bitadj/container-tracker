@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  order_id: 1
+  po_num: MyString
+  start_date: 2014-02-07 15:26:07
+  cancel_date: 2014-02-07 15:26:07
+  num_cartons: 1
+  customer_id_id: 
+
+two:
+  order_id: 1
+  po_num: MyString
+  start_date: 2014-02-07 15:26:07
+  cancel_date: 2014-02-07 15:26:07
+  num_cartons: 1
+  customer_id_id: 
