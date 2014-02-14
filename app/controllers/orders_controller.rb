@@ -29,25 +29,25 @@ class OrdersController < ApplicationController
   def update
   	@order = Order.find(params[:id])
 
-	if @order.update order_params
-    	flash[:notice] = "Successfully updated order."
-    	redirect_to action: 'index'
-	else
-		render action: 'edit'
+  	if @order.update order_params
+      	flash[:notice] = "Successfully updated order."
+      	redirect_to action: 'index'
+  	else
+  		render action: 'edit'
     end
   end
 
   def destroy
   	ord = Order.find(params[:id])
   	ord.destroy
-	redirect_to orders_path
+	 redirect_to orders_path
   end
 
   private
 
   def order_params
   	params.require(:order).permit(
-  		:order_id, :po_num, :start_date, :cancel_date, :num_cartons
+  		:customer_id, :container_id, :order_num, :po_num, :start_date, :cancel_date, :num_cartons
   	)
   end
 

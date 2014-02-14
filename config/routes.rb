@@ -1,4 +1,8 @@
 ContainerTracker::Application.routes.draw do
+  get "containers/index"
+  get "containers/new"
+  get "containers/edit"
+  get "containers/show"
   resources :orders, only: [:index, :show, :create, :new, :edit, :update, :destroy]
   resources :customers, only: [:index, :show, :create, :new, :edit, :update, :destroy]
 

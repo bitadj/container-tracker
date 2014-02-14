@@ -28,6 +28,51 @@ customers = Customer.create([
 
 ])
 
+containers = Container.create ([
+	{
+		container_num: 1001,
+		num_cartons: 353,
+		est_arrival: '30-03-2014'
+	},
+		{
+		container_num: 1002,
+		num_cartons: 213,
+		est_arrival: '15-03-2014'
+	},
+		{
+		container_num: 1003,
+		num_cartons: 219,
+		est_arrival: '01-03-2014'
+	},
+		{
+		container_num: 1004,
+		num_cartons: 610,
+		est_arrival: '15-02-2014'
+	}
+	# 	{
+	# 	container_num: 1005,
+	# 	num_cartons: 404,
+	# 	est_arrival: '01-02-2014'
+	# },
+	# 	{
+	# 	container_num: 1006,
+	# 	num_cartons: 118,
+	# 	est_arrival: '28-01-2014'
+	# },
+	# 	{
+	# 	container_num: 1007,
+	# 	num_cartons: 249,
+	# 	est_arrival: '15-01-2014'
+	# },
+	# 	{
+	# 	container_num: 1008,
+	# 	num_cartons: 222,
+	# 	est_arrival: '06-01-2014'
+	# }
+
+])
+
+
 orders = Order.create ([
 	{
 		order_num: 1001,
@@ -35,7 +80,8 @@ orders = Order.create ([
 		start_date: '01-04-2014',
 		cancel_date: '01-04-2014',
 		num_cartons: 25,
-		customer: Customer.find_by(cust_num: 101)
+		customer: Customer.find_by(cust_num: 101),
+		container: Container.find_by(container_num: 1001)
 	},
 	{
 		order_num: 1002,
@@ -43,7 +89,8 @@ orders = Order.create ([
 		start_date: '01-04-2014',
 		cancel_date: '01-04-2014',
 		num_cartons: 40,
-		customer: Customer.find_by(cust_num: 103)
+		customer: Customer.find_by(cust_num: 103),
+		container: Container.find_by(container_num: 1001)
 	},
 	{
 		order_num: 1003,
@@ -51,7 +98,8 @@ orders = Order.create ([
 		start_date: '15-04-2014',
 		cancel_date: '30-04-2014',
 		num_cartons: 26,
-		customer: Customer.find_by(cust_num: 102)
+		customer: Customer.find_by(cust_num: 102),
+		container: Container.find_by(container_num: 1002)
 	},
 	{
 		order_num: 1004,
@@ -59,7 +107,8 @@ orders = Order.create ([
 		start_date: '01-05-2014',
 		cancel_date: '15-05-2014',
 		num_cartons: 100,
-		customer: Customer.find_by(cust_num: 104)
+		customer: Customer.find_by(cust_num: 104),
+		container: Container.find_by(container_num: 1002)
 	},
 	{
 		order_num: 1005,
@@ -67,7 +116,8 @@ orders = Order.create ([
 		start_date: '01-05-2014',
 		cancel_date: '15-05-2014',
 		num_cartons: 100,
-		customer: Customer.find_by(cust_num: 104)
+		customer: Customer.find_by(cust_num: 104),
+		container: Container.find_by(container_num: 1003)
 	},
 	{
 		order_num: 1006,
@@ -75,14 +125,21 @@ orders = Order.create ([
 		start_date: '01-05-2014',
 		cancel_date: '15-05-2014',
 		num_cartons: 100,
-		customer: Customer.find_by(cust_num: 104)
+		customer: Customer.find_by(cust_num: 105),
+		container: Container.find_by(container_num: 1003)
 	},
-		{
+	{
 		order_num: 1007,
 		po_num: '1010230-40',
 		start_date: '01-05-2014',
 		cancel_date: '15-05-2014',
 		num_cartons: 100,
-		customer: Customer.find_by(cust_num: 104)
+		customer: Customer.find_by(cust_num: 105),
+		container: Container.find_by(container_num: 1004)
 	}
 ])
+
+
+
+
+

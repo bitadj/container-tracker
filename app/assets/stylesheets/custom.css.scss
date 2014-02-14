@@ -1,0 +1,34 @@
+@import "bootstrap";
+
+h1 {
+	text-align: center;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.btn, .form-control, #disabledInput {
+	margin-bottom: 10px;
+}
+
+/*.btn {
+	float: left;
+	margin-right: 10px;
+}*/
+
+html, body, .container-fluid, .row, .col-md-3 {
+	height: 100%;
+}
+
+.col-md-3 {
+	background-color: lime;
+}
+
+.button_test {
+	position: fixed;
+	width: 200px;
+	height: 200px;
+
+
+};

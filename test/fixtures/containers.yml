@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  container_num: 1
+  num_cartons: 1
+  est_arrival: 2014-02-13
+  arrival: 2014-02-13
+
+two:
+  container_num: 1
+  num_cartons: 1
+  est_arrival: 2014-02-13
+  arrival: 2014-02-13

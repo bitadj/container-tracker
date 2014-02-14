@@ -1,5 +1,12 @@
 <%= form_for @order do |f| %>
 	<div>
+		Customer<br />
+		<%= f.collection_select :customer_id, Customer.all, :id, :name %>
+	</div>
+
+	<br />
+
+	<div>
 		PO Number<br />
 		<%= f.text_field :po_num %>
 	</div>
