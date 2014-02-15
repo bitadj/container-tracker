@@ -1,15 +1,35 @@
-<tr onclick="window.location.href = '<%= url_for order_path(order) %>'">	
-	<td><%= order.customer.name %></td>
-	<td><%= link_to order.po_num, order %></td>
-	<td><%= order.start_date.strftime '%m/%d/%y' %></td>
-	<td><%= order.cancel_date.strftime '%m/%d/%y' %></td>
-	<td><%= order.num_cartons %></td>
-	<td><%= link_to edit_order_path(order), class: "btn btn-primary btn-sm" do %>
-            <span class="glyphicon glyphicon-pencil">edit</span>
-        <% end %> 
-        <%= link_to order_path(order), {method: :delete, confirm: "Are you sure you want to delete this order?", class: "btn btn-danger btn-sm"} do %>
-            <span class="glyphicon glyphicon-trash"></span>
-        <% end %>
-    </td>
-</tr>
 
+<div class="col-xs-12 col-sm-4 col-md-3">
+    <div class="panel panel-default ">
+      <!-- Default panel contents -->
+      <div class="panel-heading", onclick="window.location.href = '<%= url_for order_path(order) %>'"><%= order.customer.name %></div>
+      <!-- Table -->
+      <table class="table">
+        <tr onclick="window.location.href = '<%= url_for order_path(order) %>'">
+            <td><%= link_to order.po_num, order %></td>
+        </tr>
+        <tr onclick="window.location.href = '<%= url_for order_path(order) %>'">
+            <td><%= order.start_date.strftime '%-m/%-d/%-y' %></td>
+            <td><%= order.cancel_date.strftime '%-m/%-d/%-y' %></td>
+        </tr>
+      </table>
+    </div>
+</div>
+
+<!-- 
+
+<tr onclick="window.location.href = ''<%#= url_for order_path(order) %>'" >
+
+	<td><%#= order.customer.name %></td>
+	<td><%#= link_to order.po_num, order %></td>
+	<td><%#= order.start_date.strftime '%m/%d/%y' %></td>
+	<td><%#= order.cancel_date.strftime '%m/%d/%y' %></td>
+	<td><%#= order.num_cartons %></td>
+	<td><%#= link_to edit_order_path(order), class: "btn btn-primary btn-sm" do %>
+            <span class="glyphicon glyphicon-pencil">edit</span>
+        <%# end %> 
+        <%#= link_to order_path(order), {method: :delete, confirm: "Are you sure you want to delete this order?", class: "btn btn-danger btn-sm"} do %>
+            <span class="glyphicon glyphicon-trash"></span>
+        <%# end %>
+    </td>
+</tr> -->

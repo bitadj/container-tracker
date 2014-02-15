@@ -78,7 +78,7 @@ orders = Order.create ([
 		order_num: 1001,
 		po_num: '903300216',
 		start_date: '01-04-2014',
-		cancel_date: '01-04-2014',
+		cancel_date: '15-04-2014',
 		num_cartons: 25,
 		customer: Customer.find_by(cust_num: 101),
 		container: Container.find_by(container_num: 1001)
@@ -87,7 +87,7 @@ orders = Order.create ([
 		order_num: 1002,
 		po_num: '903300432',
 		start_date: '01-04-2014',
-		cancel_date: '01-04-2014',
+		cancel_date: '15-04-2014',
 		num_cartons: 40,
 		customer: Customer.find_by(cust_num: 103),
 		container: Container.find_by(container_num: 1001)
@@ -131,6 +131,105 @@ orders = Order.create ([
 	{
 		order_num: 1007,
 		po_num: '1010230-40',
+		start_date: '01-05-2014',
+		cancel_date: '15-05-2014',
+		num_cartons: 100,
+		customer: Customer.find_by(cust_num: 105),
+		container: Container.find_by(container_num: 1004)
+	},
+		{
+		order_num: 1008,
+		po_num: '903300509',
+		start_date: '01-04-2014',
+		cancel_date: '15-04-2014',
+		num_cartons: 25,
+		customer: Customer.find_by(cust_num: 101),
+		container: Container.find_by(container_num: 1001)
+	},
+	{
+		order_num: 1009,
+		po_num: '903300725',
+		start_date: '01-04-2014',
+		cancel_date: '15-04-2014',
+		num_cartons: 40,
+		customer: Customer.find_by(cust_num: 103),
+		container: Container.find_by(container_num: 1001)
+	},
+	{
+		order_num: 1010,
+		po_num: '4011088',
+		start_date: '15-04-2014',
+		cancel_date: '30-04-2014',
+		num_cartons: 26,
+		customer: Customer.find_by(cust_num: 102),
+		container: Container.find_by(container_num: 1002)
+	},
+	{
+		order_num: 1011,
+		po_num: '1010576-10',
+		start_date: '01-05-2014',
+		cancel_date: '15-05-2014',
+		num_cartons: 100,
+		customer: Customer.find_by(cust_num: 104),
+		container: Container.find_by(container_num: 1002)
+	},
+	{
+		order_num: 1012,
+		po_num: '1010576-20',
+		start_date: '01-05-2014',
+		cancel_date: '15-05-2014',
+		num_cartons: 100,
+		customer: Customer.find_by(cust_num: 104),
+		container: Container.find_by(container_num: 1003)
+	},
+	{
+		order_num: 1013,
+		po_num: '1010576-30',
+		start_date: '01-05-2014',
+		cancel_date: '15-05-2014',
+		num_cartons: 100,
+		customer: Customer.find_by(cust_num: 104),
+		container: Container.find_by(container_num: 1003)
+	},
+	{
+		order_num: 1014,
+		po_num: '1010576-40',
+		start_date: '01-05-2014',
+		cancel_date: '15-05-2014',
+		num_cartons: 100,
+		customer: Customer.find_by(cust_num: 104),
+		container: Container.find_by(container_num: 1004)
+	},
+		{
+		order_num: 1015,
+		po_num: '1010576-10',
+		start_date: '01-05-2014',
+		cancel_date: '15-05-2014',
+		num_cartons: 100,
+		customer: Customer.find_by(cust_num: 105),
+		container: Container.find_by(container_num: 1002)
+	},
+	{
+		order_num: 1016,
+		po_num: '1010576-20',
+		start_date: '01-05-2014',
+		cancel_date: '15-05-2014',
+		num_cartons: 100,
+		customer: Customer.find_by(cust_num: 105),
+		container: Container.find_by(container_num: 1003)
+	},
+	{
+		order_num: 1017,
+		po_num: '1010576-30',
+		start_date: '01-05-2014',
+		cancel_date: '15-05-2014',
+		num_cartons: 100,
+		customer: Customer.find_by(cust_num: 105),
+		container: Container.find_by(container_num: 1003)
+	},
+	{
+		order_num: 1018,
+		po_num: '1010576-40',
 		start_date: '01-05-2014',
 		cancel_date: '15-05-2014',
 		num_cartons: 100,
