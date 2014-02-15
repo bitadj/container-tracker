@@ -1,6 +1,6 @@
 class OrdersController < ApplicationController
   def index
-  	@orders = Order.all
+  	@orders = Order.all.sort_by(&:start_date)
   end
 
   def new

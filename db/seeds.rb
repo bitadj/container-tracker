@@ -8,6 +8,7 @@
 
 Customer.all.destroy
 Order.all.destroy
+Container.all.destroy
 
 customers = Customer.create([
 	{
@@ -24,7 +25,7 @@ customers = Customer.create([
 	},
 	{
 		cust_num: 105, name: 'Marshalls'
-	},
+	}
 
 ])
 
@@ -37,39 +38,38 @@ containers = Container.create ([
 		{
 		container_num: 1002,
 		num_cartons: 213,
-		est_arrival: '15-03-2014'
+		est_arrival: '12-03-2014'
 	},
 		{
 		container_num: 1003,
 		num_cartons: 219,
-		est_arrival: '01-03-2014'
+		est_arrival: '27-02-2014'
 	},
 		{
 		container_num: 1004,
 		num_cartons: 610,
 		est_arrival: '15-02-2014'
+	},
+		{
+		container_num: 1005,
+		num_cartons: 404,
+		est_arrival: '01-02-2014'
+	},
+		{
+		container_num: 1006,
+		num_cartons: 118,
+		est_arrival: '28-01-2014'
+	},
+		{
+		container_num: 1007,
+		num_cartons: 249,
+		est_arrival: '15-01-2014'
+	},
+		{
+		container_num: 1008,
+		num_cartons: 222,
+		est_arrival: '06-01-2014'
 	}
-	# 	{
-	# 	container_num: 1005,
-	# 	num_cartons: 404,
-	# 	est_arrival: '01-02-2014'
-	# },
-	# 	{
-	# 	container_num: 1006,
-	# 	num_cartons: 118,
-	# 	est_arrival: '28-01-2014'
-	# },
-	# 	{
-	# 	container_num: 1007,
-	# 	num_cartons: 249,
-	# 	est_arrival: '15-01-2014'
-	# },
-	# 	{
-	# 	container_num: 1008,
-	# 	num_cartons: 222,
-	# 	est_arrival: '06-01-2014'
-	# }
-
 ])
 
 

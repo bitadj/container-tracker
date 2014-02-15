@@ -1,6 +1,6 @@
 class ContainersController < ApplicationController
   def index
-  	@containers = Container.all
+  	@containers = Container.all.sort_by(&:est_arrival).reverse
   end
 
   def new

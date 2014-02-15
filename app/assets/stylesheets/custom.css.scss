@@ -1,4 +1,5 @@
 @import "bootstrap";
+$maincolor: rgb(255, 255, 255);
 
 h1 {
 	text-align: center;
@@ -8,27 +9,25 @@ a:hover {
 	text-decoration: none;
 }
 
-.btn, .form-control, #disabledInput {
+.btn, .form-control {
 	margin-bottom: 10px;
 }
 
-/*.btn {
+.btn {
 	float: left;
 	margin-right: 10px;
-}*/
-
-html, body, .container-fluid, .row, .col-md-3 {
-	height: 100%;
 }
 
-.col-md-3 {
-	background-color: lime;
+.shipcontainer {
+	background: $maincolor;
+	border: 2px solid #eee;
+	text-align: center;
+	margin: 10px;
+	height: 125px;
+	overflow: hidden;
 }
 
-.button_test {
-	position: fixed;
-	width: 200px;
-	height: 200px;
-
-
-};
+.shiprow { 
+	max-height: 300px;
+	overflow: scroll;
+}

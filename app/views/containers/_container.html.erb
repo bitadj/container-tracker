@@ -1,0 +1,8 @@
+<div class="col-xs-12 col-sm-6 col-md-3">
+	<%= link_to(container_path(container)) do %>
+		<div class="shipcontainer">
+			<span><h3><%= container.num_cartons %></h3></span>
+			<span><h3><%= container.est_arrival.strftime '%-m/%-d' %></h3></span>
+		</div>
+	<% end %>
+</div>
