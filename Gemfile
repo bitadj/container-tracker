@@ -3,14 +3,20 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
 gem 'mongoid', github: 'mongoid/mongoid'
+
+# For salted hashes 
 gem 'bcrypt-ruby', github: 'codahale/bcrypt-ruby'
+
+# To help Heroku deploys
 gem 'rails_12factor'
+
+# For debugging (if you need it!)
 gem 'pry'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 gem 'bootstrap-sass', '~> 3.1.0'
-
+gem 'bootstrap-datepicker-rails'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'

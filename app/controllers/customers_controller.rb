@@ -1,6 +1,8 @@
 class CustomersController < ApplicationController
+    before_action :verify_logged_in
+
     def index
-        @customers = Customer.all.sort_by(&:cust_num)
+        @customers = Customer.all.sort_by(&:name)
     end
 
     def new
@@ -63,4 +65,6 @@ class CustomersController < ApplicationController
   		:cust_num, :name
   	)
   end
+
+
 end

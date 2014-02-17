@@ -1,4 +1,6 @@
 class ContainersController < ApplicationController
+  before_action :verify_logged_in
+
   def index
   	@containers = Container.all.sort_by(&:est_arrival).reverse
   end
@@ -50,5 +52,6 @@ class ContainersController < ApplicationController
   		:container_num, :num_cartons, :est_arrival, :arrival
   	)
   end
+
 
 end

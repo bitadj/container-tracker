@@ -1,4 +1,6 @@
 class OrdersController < ApplicationController
+  before_action :verify_logged_in
+
   def index
   	@orders = Order.all.sort_by(&:start_date)
   end

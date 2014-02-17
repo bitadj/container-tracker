@@ -1,0 +1,28 @@
+<%= form_for @container do |f| %>
+
+    <div>
+        <strong>Number of Cartons</strong><br />
+        <%= f.text_field :num_cartons %>
+    </div>
+
+    <br />
+
+    <div>
+        <strong>Estimated Arrival</strong><br />
+        <%= f.text_field :est_arrival %>
+    </div>
+
+    <br />
+
+    <div>
+        <strong>Actual Arrival</strong>
+        <br />
+        <%= f.text_field :arrival %>
+    </div>
+
+    <br />
+    
+    <div><%= f.submit %> <%= button_tag "Reset", type: :reset %></div>
+    
+    <%= link_to "Cancel and go back", containers_path %>
+<% end %>
