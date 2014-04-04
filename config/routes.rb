@@ -1,7 +1,7 @@
 ContainerTracker::Application.routes.draw do
-  resources :containers, only: [:index, :show, :create, :new, :edit, :update, :destroy]
-  resources :orders, only: [:index, :show, :create, :new, :edit, :update, :destroy]
-  resources :customers, only: [:index, :show, :create, :new, :edit, :update, :destroy]
+  resources :containers
+  resources :orders
+  resources :customers
   resources :users, only:[:index, :new, :create]
   resources :auths, only:[:new, :create]
 

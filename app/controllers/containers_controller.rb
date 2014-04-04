@@ -52,6 +52,5 @@ class ContainersController < ApplicationController
   		:container_num, :num_cartons, :est_arrival, :arrival
   	)
   end
-
-
+  
 end

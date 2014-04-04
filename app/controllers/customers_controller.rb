@@ -45,26 +45,14 @@ class CustomersController < ApplicationController
     	cust.destroy
         redirect_to customers_path
     end
-
-
-  	# WHY DOES THIS METHOD STILL CREATE A BLANK CUSTOMER IN DB??
- #  before_filter :check_for_cancel, only: [:create, :update]
-
- #  def check_for_cancel
-	# if params[:commit] == "Cancel"
-	# 	redirect_to customers_path
-	# end
- #  end
-
-
-
+    
   private
 
-  def customer_params
-  	params.require(:customer).permit(
-  		:cust_num, :name
-  	)
-  end
+      def customer_params
+      	params.require(:customer).permit(
+      		:cust_num, :name
+      	)
+      end
 
 
 end

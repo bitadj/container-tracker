@@ -1,7 +1,6 @@
 class UsersController < ApplicationController
  before_action :verify_not_logged_in, only: [:new, :create]
 
-
     def new
         @user = User.new
     end
@@ -20,7 +19,7 @@ private
 
     def verify_not_logged_in
         if current_user
-        flash[:error] = "You must log out first!"
+            flash[:error] = "You must log out first!"
         redirect_to root_path
         end
     end
