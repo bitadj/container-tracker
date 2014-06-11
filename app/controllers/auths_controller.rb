@@ -27,5 +27,4 @@ class AuthsController < ApplicationController
         redirect_to new_auth_path
     end
 
-
 end

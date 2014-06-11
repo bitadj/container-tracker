@@ -49,7 +49,7 @@
 
 
       <ul class="nav navbar-nav navbar-right">
-        <li><a href = "#"><%= current_user ? "Hi, " + current_user.username : "Hi, stranger!" %></a></li>
+        <li><a href = "#"><%= current_user ? "Hi, " + current_user.username %></a></li>
         <li><%= current_user ? (link_to "Log Out!", auths_path, method: :delete) : (link_to "Login!", new_auth_path) %></li>
       </ul>
     </div><!-- /.navbar-collapse -->

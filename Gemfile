@@ -2,10 +2,13 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
-gem 'mongoid', github: 'mongoid/mongoid'
+gem 'mongoid'
+gem 'bson_ext', '~> 1.5'
+gem 'genghisapp'
 
 # For salted hashes 
-gem 'bcrypt-ruby', github: 'codahale/bcrypt-ruby'
+# gem 'bcrypt-ruby'
+# , github: 'codahale/bcrypt-ruby'
 
 # To help Heroku deploys
 gem 'rails_12factor'
@@ -42,7 +45,7 @@ group :doc do
 end
 
 # Use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.1.2'
+gem 'bcrypt-ruby', '~> 3.1.2'
 
 # Use unicorn as the app server
 # gem 'unicorn'
