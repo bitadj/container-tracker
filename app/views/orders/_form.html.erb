@@ -1,47 +1,46 @@
 <% form_for @order do |f| %>
 	<div>
-		Customer<br />
+		Customer<br>
 		<%= f.collection_select :customer_id, Customer.all, :id, :name %>
 	</div>
 
-	<br />
+	<br>
 
 	<div>
-		PO Number<br />
+		PO Number<br>
 		<%= f.text_field :po_num %>
 	</div>
 
-	<br />
+	<br>
 
 	<div>
-		Start Date<br />
+		Start Date<br>
 		<%= f.text_field :start_date, 'data-behaviour' => 'datepicker' %>
 		<%#= f.text_field :start_date %>
 	</div>
 
-	<br />
+	<br>
 
 	<div>
-		Cancel Date<br />
+		Cancel Date<br>
 		<%= f.text_field :cancel_date, 'data-behaviour' => 'datepicker' %>
-		<%#= f.text_field :cancel_date %>
 	</div>
 
-	<br />
+	<br>
 
 	<div>
-		Number of Cartons<br />
+		Number of Cartons<br>
 		<%= f.text_field :num_cartons %>
 	</div>
 
-	<br />
+	<br>
 
 	<div>
-		Container No.<br />
+		Container No.<br>
 		<%= f.collection_select :container_id, Container.all, :id, :num_cartons %>
 	</div>
 
-	<br />	
+	<br>	
 	<div><%= f.submit %> <%= button_tag "Reset", type: :reset %></div>
 	
 	<%= link_to "Cancel and go back", orders_path %>

@@ -40,9 +40,9 @@ class OrdersController < ApplicationController
   end
 
   def destroy
-  	ord = Order.find(params[:id])
-  	ord.destroy
-	 redirect_to orders_path
+    ord = Order.find(params[:id])
+    ord.destroy
+  	redirect_to orders_path
   end
 
   private

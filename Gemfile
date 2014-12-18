@@ -2,9 +2,9 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
-gem 'mongoid'
-gem 'bson_ext', '~> 1.5'
-gem 'genghisapp'
+gem 'mongoid', github: 'mongoid/mongoid'
+#gem 'bson_ext', '~> 1.5'
+#gem 'genghisapp'
 
 # For salted hashes 
 # gem 'bcrypt-ruby'
